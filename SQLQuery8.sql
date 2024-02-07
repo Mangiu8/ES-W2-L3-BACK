@@ -1,0 +1,26 @@
+--1
+--Select Count(*) as TotaleOrdini from Orders
+--2	
+--Select Count(*) as TotaleClienti from Customers 
+--3
+--Select Count(*) as TotaleClientiDaLondra from Customers where City = 'London'
+--4
+--Select AVG(Freight) as SpesaSpedizioneMedia from Orders
+--5
+--Select AVG(Freight) as MediaCostiDiBOTTM from Orders where CustomerID = 'BOTTM'
+--6
+--Select CustomerID, Sum(Freight) as TotaleSpesePerCliente from Orders group by CustomerID
+--7
+--Select City, Count(CustomerID) as ClientiPerCitta from Customers Group By City
+--8
+--Select OrderID, Count(UnitPrice) as TotaleUnita, count(Quantity) as TotaleQuantita from Order_Details Group by OrderID
+--Select OrderId, Sum(UnitPrice * Quantity) as TotaleQualcosa from Order_Details Group by OrderID
+--9
+--Select OrderID, Count(UnitPrice) as TotaleUnita, count(Quantity) as TotaleQuantita from Order_Details Group by OrderID Having OrderID = 10248
+--Select OrderId, Sum(UnitPrice * Quantity) as TotaleQualcosaID from Order_Details Group by OrderID having OrderID = 10248
+--10
+--Select CategoryID , Count(ProductID) as NumeroPordotti from Products Group By CategoryID
+--11
+--Select ShipCountry , Count(OrderID) as TotaleOrdini from Orders Group by ShipCountry
+--12
+--Select ShipCountry , AVG(Freight) as MediaCostOSpedizionePaese from Orders Group by ShipCountry
